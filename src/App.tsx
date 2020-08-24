@@ -8,10 +8,8 @@ function App() {
     <div className="centerHolder">
       <div className="calculatorHolder">
         <h1>Calculator</h1>
-        <div>
-          <ResultComponent />
-          <KeyPadComponent />
-        </div>
+        <ResultComponent />
+        <KeyPadComponent />
       </div>
     </div>
   );

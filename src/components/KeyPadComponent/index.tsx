@@ -28,12 +28,19 @@ const KeyPadComponent = () => {
         ['1', '2', '3', '+'],
         ['.', '0', '=', '/'],
       ].map((row) => (
-        <>
+        <React.Fragment key={row[0]}>
           {row.map((el) => (
-            <button type="button" name={el} onClick={handleClick}>{el}</button>
+            <button
+              key={el}
+              type="button"
+              name={el}
+              onClick={handleClick}
+            >
+              {el}
+            </button>
           ))}
           <br />
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
